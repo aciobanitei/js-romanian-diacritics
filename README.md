@@ -10,14 +10,14 @@ The `standard` function takes a string as an argument and replaces all of its tr
 ```javascript
 const diacritics = require("js-romanian-diacritics");
 diacritics.standard("Aştept să vinã colegii de muncã.");
-  // Output: Aștept să vină colegii demuncă.
+  // Output: Aștept să vină colegii de muncă.
 ```
 ### Traditional/incorrect diacritics
 The `traditional` function takes a string as an argument and replaces all of its standard/official Romanian diacritics with their corresponding traditional/incorrect counterpart.
 
 ```javascript
 const diacritics = require("js-romanian-diacritics");
-diacritics.traditional("Aștept să vină colegii demuncă.");
+diacritics.traditional("Aștept să vină colegii de muncă.");
   // Output: Aştept să vinã colegii de muncã.
 ```
 
@@ -27,8 +27,8 @@ The `without` function takes a string as an argument and replaces all the Romani
 
 ```javascript
 const diacritics = require("js-romanian-diacritics");
-diacritics.without("Aştept să vină primăvara şi vremea bună.");
-  // Output: Astept sa vina primavara si vremea buna.
+diacritics.without("Aştept să vină colegii de muncă.");
+  // Output: Astept sa vina colegii de munca.
 ```
 
 ## Character set
