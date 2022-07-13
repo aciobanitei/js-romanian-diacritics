@@ -4,7 +4,7 @@ Functions for converting Romanian diacritics from a text (converting characters 
 
 ## Usage
 
-### Standard diacritics
+### Standard/official diacritics
 The `standard` function takes a string as an argument and replaces all of its traditional/incorrect Romanian diacritics with their corresponding standard/official counterpart.
 
 ```javascript
@@ -12,7 +12,7 @@ const diacritics = require("js-romanian-diacritics");
 diacritics.standard("Aştept să vinã colegii de muncã.");
   // Output: Aștept să vină colegii demuncă.
 ```
-###
+### Traditional/incorrect diacritics
 The `traditional` function takes a string as an argument and replaces all of its standard/official Romanian diacritics with their corresponding traditional/incorrect counterpart.
 
 ```javascript
@@ -22,7 +22,7 @@ diacritics.traditional("Aștept să vină colegii demuncă.");
 ```
 
 
-### Stripping diacritics
+### Without diacritics
 The `without` function takes a string as an argument and replaces all the Romanian diacritics (the official character set, as well as incorrect representations of them) with their accentless counterpart.
 
 ```javascript
