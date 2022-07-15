@@ -1,6 +1,6 @@
 {
   "name": "js-romanian-diacritics",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Functions for converting Romanian diacritics from a text (converting characters - standard to traditional or traditional  to standard,  remove diacritics marks)",
   "main": "lib/index.js",
   "directories": {

@@ -32,6 +32,15 @@ diacritics.without("Aştept să vină colegii de muncă.");
 ```
 
 ## Character set
+There are six Romanian-specific characters that are incorrectly implemented in all Microsoft Windows versions before Vista:
+
+U+0218 Ș LATIN CAPITAL LETTER S WITH COMMA BELOW – incorrectly implemented as U+015E Ş LATIN CAPITAL LETTER S WITH CEDILLA
+U+0219 ș LATIN SMALL LETTER S WITH COMMA BELOW – incorrectly implemented as U+015F ş LATIN SMALL LETTER S WITH CEDILLA
+U+021A Ț LATIN CAPITAL LETTER T WITH COMMA BELOW – incorrectly implemented as U+0162 Ţ LATIN CAPITAL LETTER T WITH CEDILLA
+U+021B ț LATIN SMALL LETTER T WITH COMMA BELOW – incorrectly implemented as U+0163 ţ LATIN SMALL LETTER T WITH CEDILLA
+U+0102 Ă LATIN CAPITAL LETTER A WITH BREVE – incorrectly implemented as U+00E3 ã LATIN CAPITAL LETTER A WITH TILDE
+U+0103 ă LATIN SMALL LETTER A WITH BREVE – incorrectly implemented as U+00C3 Ã LATIN SMALL LETTER A WITH TILDE
+
 These Unicode characters are the correct representations of Romanian diacritics:
 
 | Character | Unicode value | Unicode name                            |
@@ -40,7 +49,15 @@ These Unicode characters are the correct representations of Romanian diacritics:
 | ă         | U+0103        | LATIN SMALL LETTER A WITH BREVE         |
 | Â         | U+00C2        | LATIN CAPITAL LETTER A WITH CIRCUMFLEX  |
 | â         | U+00E2        | LATIN SMALL LETTER A WITH CIRCUMFLEX    |
-| Ș         | U+0218        | LATIN CAPITAL LETTER S WITH COMMA BELOW |
+| Î         | U+00CE	    | LATIN CAPITAL LETTER S WITH CIRCUMFLEX  |
+| î         | U+00EE        | LATIN SMALL LETTER S WITH CIRCUMFLEX    |
+| Ț         | U+021A        | LATIN CAPITAL LETTER T WITH COMMA BELOW |
 | ș         | U+0219        | LATIN SMALL LETTER S WITH COMMA BELOW   |
 | Ț         | U+021A        | LATIN CAPITAL LETTER T WITH COMMA BELOW |
 | ț         | U+021B        | LATIN SMALL LETTER T WITH COMMA BELOW   |
+
+## Inspired by:
+
+This project is inspired and it is a refinement of js-ro-diacritics
+
+https://github.com/esevo-tech/js-ro-diacritics
